@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "name": "SEO GPT Generate Endpoint",
+  "description": "LLM için içerik üretmeye yarayan SEO uyumlu endpoint.",
+  "api": {
+    "method": "POST",
+    "path": "/generate",
+    "inputs": {
+      "prompt": {
+        "type": "string",
+        "description": "Kullanıcının içerik üretmek istediği konu."
+      },
+      "persona": {
+        "type": "string",
+        "description": "Kullanılacak persona (örnek: algo-chill, algo-expert)"
+      }
+    },
+    "outputs": {
+      "content_html": "string",
+      "meta": {
+        "title": "string",
+        "description": "string"
+      },
+      "schema": "object"
+    }
+  }
+}

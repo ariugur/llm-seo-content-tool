@@ -1,0 +1,24 @@
+{
+  "name": "SEOContentGenerator",
+  "description": "Create SEO-optimized blog content using structured HTML, meta tags, schema markup and optional personas.",
+  "api_url": "https://seogpt.dev:8010/generate",
+  "input_spec": {
+    "type": "object",
+    "properties": {
+      "prompt": {
+        "type": "string",
+        "description": "The topic or request to generate content for."
+      },
+      "persona": {
+        "type": "string",
+        "description": "Optional persona (e.g. 'algo-chill', 'algo-expert')"
+      }
+    },
+    "required": ["prompt"]
+  },
+  "auth": {
+    "type": "header",
+    "header_name": "x-api-key",
+    "example": "cok-gizli-bir-anahtar"
+  }
+}
